@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="stopwatch">
+        <h1>Stop Watch 2020</h1>
+        <div id="counter">
+            <div>
+                <span id="minutes">00</span><span><button onclick="start();this.disabled = true;" >Start</button></span>
+            </div>
+            <div>
+                <span id="seconds">00</span><span><button onclick="pause();" >Pause</button></span>
+            </div>
+            <div>
+                <span id="miliseconds">00</span><span><button onclick="reset(); ">Reset</button></span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+</html>
