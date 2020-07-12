@@ -22,7 +22,9 @@ function timer(){
 }
 
 function start(){
-     interval = setInterval(timer,10);
+    interval = setInterval(timer,10);
+    var btn = document.getElementById("starts");
+    btn.disabled = true;
 }
 
 // function disableBtn{
@@ -31,9 +33,13 @@ function start(){
 // }
 
 function pause(){
-    clearInterval(interval)
+     clearInterval(interval);
+     var btn = document.getElementById("starts");
+     btn.disabled = false;
+   }
+
     
-}
+
 
 function reset(){
     min = 0;
@@ -42,7 +48,9 @@ function reset(){
     minutes.innerHTML = min;
     seconds.innerHTML = sec;
     miliseconds.innerHTML = milisec;
-    clearInterval(interval)
+    clearInterval(interval);
+    var btn = document.getElementById("starts");
+    btn.disabled = false;
 
 }
 
